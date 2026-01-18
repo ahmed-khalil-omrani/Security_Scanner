@@ -1,0 +1,205 @@
+2025-11-27 11:55:02,097 - web_pentest_cli.scanner - INFO - Starting scan: scan_1764237302
+2025-11-27 11:55:02,099 - web_pentest_cli.scanner - INFO - Target: https://chantipro.com/
+2025-11-27 11:55:02,107 - web_pentest_cli.scanner - INFO - Mode: passive
+2025-11-27 11:55:02,112 - web_pentest_cli.scanner - INFO - Phase 1: Reconnaissance
+2025-11-27 11:55:02,112 - web_pentest_cli.gather - INFO - Starting reconnaissance on https://chantipro.com/
+2025-11-27 11:55:02,113 - web_pentest_cli.gather - DEBUG - Fetching robots.txt from https://chantipro.com/robots.txt
+2025-11-27 11:55:02,113 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/robots.txt
+2025-11-27 11:55:02,115 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:02,115 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): chantipro.com:443
+2025-11-27 11:55:03,491 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-11-27 11:55:03,507 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 1.39s)
+2025-11-27 11:55:03,507 - web_pentest_cli.gather - DEBUG - Fetching sitemap from https://chantipro.com/sitemap.xml
+2025-11-27 11:55:03,507 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/sitemap.xml
+2025-11-27 11:55:03,507 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:03,604 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /sitemap.xml HTTP/1.1" 200 None
+2025-11-27 11:55:03,604 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.10s)
+2025-11-27 11:55:03,619 - charset_normalizer - DEBUG - Encoding detection: utf_8 is most likely the one.
+2025-11-27 11:55:04,509 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:04,510 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:04,550 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:04,562 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:05,511 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/_nuxt/DL8LuI--.js
+2025-11-27 11:55:05,512 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:05,627 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /_nuxt/DL8LuI--.js HTTP/1.1" 200 351245
+2025-11-27 11:55:05,803 - web_pentest_cli.http_client - DEBUG - Response: 200 (351245 bytes, 0.29s)
+2025-11-27 11:55:05,843 - web_pentest_cli.gather - DEBUG - Crawl complete: discovered 2 URLs
+2025-11-27 11:55:06,515 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/_nuxt/DL8LuI--.js
+2025-11-27 11:55:06,515 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:06,767 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /_nuxt/DL8LuI--.js HTTP/1.1" 200 351245
+2025-11-27 11:55:06,953 - web_pentest_cli.http_client - DEBUG - Response: 200 (351245 bytes, 0.44s)
+2025-11-27 11:55:07,516 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:07,516 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:07,567 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:07,575 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.06s)
+2025-11-27 11:55:08,517 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:08,517 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:08,573 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:08,573 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:08,573 - web_pentest_cli.gather - INFO - Reconnaissance complete: 2 URLs, 0 forms, 0 input points
+2025-11-27 11:55:08,573 - web_pentest_cli.scanner - INFO - Discovered: 2 URLs, 0 forms
+2025-11-27 11:55:08,573 - web_pentest_cli.scanner - INFO - Phase 2: Vulnerability Scanning
+2025-11-27 11:55:08,573 - web_pentest_cli.scanner - INFO - Running check: Security Headers Check
+2025-11-27 11:55:09,524 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:09,524 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:09,574 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:09,576 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:09,578 - web_pentest_cli.scanner - INFO -   Found 6 issues
+2025-11-27 11:55:09,580 - web_pentest_cli.scanner - INFO - Running check: Cookie Security Check
+2025-11-27 11:55:10,526 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:10,526 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:10,578 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:10,578 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:10,578 - web_pentest_cli.scanner - INFO -   Found 0 issues
+2025-11-27 11:55:10,578 - web_pentest_cli.scanner - INFO - Running check: Reflected XSS Detection
+2025-11-27 11:55:10,578 - web_pentest_cli.scanner - INFO -   Found 0 issues
+2025-11-27 11:55:10,578 - web_pentest_cli.scanner - INFO - Running check: SQL Injection Detection
+2025-11-27 11:55:10,578 - web_pentest_cli.scanner - INFO -   Found 0 issues
+2025-11-27 11:55:10,578 - web_pentest_cli.scanner - INFO - Running check: CORS Misconfiguration Check
+2025-11-27 11:55:11,531 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:11,531 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Origin': 'https://evil.com'}
+2025-11-27 11:55:11,575 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:11,575 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.04s)
+2025-11-27 11:55:11,575 - web_pentest_cli.scanner - INFO -   Found 0 issues
+2025-11-27 11:55:11,582 - web_pentest_cli.scanner - INFO - Running check: Directory Listing Check
+2025-11-27 11:55:12,531 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/uploads/
+2025-11-27 11:55:12,531 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:12,585 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /uploads/ HTTP/1.1" 200 None
+2025-11-27 11:55:12,585 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:13,532 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/images/
+2025-11-27 11:55:13,532 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:13,579 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /images/ HTTP/1.1" 200 None
+2025-11-27 11:55:13,579 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:14,537 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/files/
+2025-11-27 11:55:14,537 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:14,587 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /files/ HTTP/1.1" 200 None
+2025-11-27 11:55:14,587 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:15,539 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/backup/
+2025-11-27 11:55:15,539 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:15,587 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /backup/ HTTP/1.1" 200 None
+2025-11-27 11:55:15,587 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:16,543 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/temp/
+2025-11-27 11:55:16,543 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:16,579 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /temp/ HTTP/1.1" 200 None
+2025-11-27 11:55:16,596 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:17,544 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/assets/
+2025-11-27 11:55:17,544 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:17,587 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /assets/ HTTP/1.1" 200 None
+2025-11-27 11:55:17,587 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.04s)
+2025-11-27 11:55:18,556 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/static/
+2025-11-27 11:55:18,556 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:18,606 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /static/ HTTP/1.1" 200 None
+2025-11-27 11:55:18,614 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.06s)
+2025-11-27 11:55:19,557 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/media/
+2025-11-27 11:55:19,557 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:19,619 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /media/ HTTP/1.1" 200 None
+2025-11-27 11:55:19,619 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.06s)
+2025-11-27 11:55:19,624 - web_pentest_cli.scanner - INFO -   Found 0 issues
+2025-11-27 11:55:19,624 - web_pentest_cli.scanner - INFO - Running check: Open Redirect Check
+2025-11-27 11:55:19,626 - web_pentest_cli.scanner - INFO -   Found 0 issues
+2025-11-27 11:55:19,626 - web_pentest_cli.scanner - INFO - Running check: Clickjacking Check
+2025-11-27 11:55:20,559 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:20,559 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:20,606 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:20,606 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:20,616 - web_pentest_cli.scanner - INFO -   Found 1 issues
+2025-11-27 11:55:20,616 - web_pentest_cli.scanner - DEBUG - Checking discovered URL: https://chantipro.com/_nuxt/DL8LuI--.js
+2025-11-27 11:55:21,560 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/_nuxt/DL8LuI--.js
+2025-11-27 11:55:21,560 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:21,673 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /_nuxt/DL8LuI--.js HTTP/1.1" 200 351245
+2025-11-27 11:55:21,941 - web_pentest_cli.http_client - DEBUG - Response: 200 (351245 bytes, 0.38s)
+2025-11-27 11:55:22,571 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/_nuxt/DL8LuI--.js
+2025-11-27 11:55:22,571 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:22,620 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /_nuxt/DL8LuI--.js HTTP/1.1" 200 351245
+2025-11-27 11:55:22,754 - web_pentest_cli.http_client - DEBUG - Response: 200 (351245 bytes, 0.18s)
+2025-11-27 11:55:23,578 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/_nuxt/DL8LuI--.js
+2025-11-27 11:55:23,578 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Origin': 'https://evil.com'}
+2025-11-27 11:55:23,623 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /_nuxt/DL8LuI--.js HTTP/1.1" 200 351245
+2025-11-27 11:55:23,804 - web_pentest_cli.http_client - DEBUG - Response: 200 (351245 bytes, 0.23s)
+2025-11-27 11:55:24,590 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/uploads/
+2025-11-27 11:55:24,590 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:24,642 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /uploads/ HTTP/1.1" 200 None
+2025-11-27 11:55:24,642 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:25,592 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/images/
+2025-11-27 11:55:25,592 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:25,649 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /images/ HTTP/1.1" 200 None
+2025-11-27 11:55:25,649 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.06s)
+2025-11-27 11:55:26,592 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/files/
+2025-11-27 11:55:26,592 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:26,651 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /files/ HTTP/1.1" 200 None
+2025-11-27 11:55:26,651 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.06s)
+2025-11-27 11:55:27,595 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/backup/
+2025-11-27 11:55:27,595 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:27,652 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /backup/ HTTP/1.1" 200 None
+2025-11-27 11:55:27,652 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.06s)
+2025-11-27 11:55:28,598 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/temp/
+2025-11-27 11:55:28,599 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:28,671 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /temp/ HTTP/1.1" 200 None
+2025-11-27 11:55:28,671 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.07s)
+2025-11-27 11:55:29,602 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/assets/
+2025-11-27 11:55:29,602 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:29,642 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /assets/ HTTP/1.1" 200 None
+2025-11-27 11:55:29,642 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.04s)
+2025-11-27 11:55:30,618 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/static/
+2025-11-27 11:55:30,618 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:30,655 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /static/ HTTP/1.1" 200 None
+2025-11-27 11:55:30,670 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:31,621 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/media/
+2025-11-27 11:55:31,621 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:31,661 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /media/ HTTP/1.1" 200 None
+2025-11-27 11:55:31,661 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.04s)
+2025-11-27 11:55:32,633 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/_nuxt/DL8LuI--.js
+2025-11-27 11:55:32,633 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:32,740 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /_nuxt/DL8LuI--.js HTTP/1.1" 200 351245
+2025-11-27 11:55:33,012 - web_pentest_cli.http_client - DEBUG - Response: 200 (351245 bytes, 0.38s)
+2025-11-27 11:55:33,019 - web_pentest_cli.scanner - DEBUG - Checking discovered URL: https://chantipro.com/
+2025-11-27 11:55:33,634 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:33,634 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:33,722 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:33,726 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.09s)
+2025-11-27 11:55:34,635 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:34,635 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:34,689 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:34,690 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.06s)
+2025-11-27 11:55:35,636 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:35,636 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Origin': 'https://evil.com'}
+2025-11-27 11:55:35,688 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:35,688 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:36,638 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/uploads/
+2025-11-27 11:55:36,638 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:36,691 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /uploads/ HTTP/1.1" 200 None
+2025-11-27 11:55:36,691 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:37,641 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/images/
+2025-11-27 11:55:37,641 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:37,692 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /images/ HTTP/1.1" 200 None
+2025-11-27 11:55:37,692 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:38,641 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/files/
+2025-11-27 11:55:38,641 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:38,686 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /files/ HTTP/1.1" 200 None
+2025-11-27 11:55:38,686 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.04s)
+2025-11-27 11:55:39,642 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/backup/
+2025-11-27 11:55:39,642 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:39,691 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /backup/ HTTP/1.1" 200 None
+2025-11-27 11:55:39,691 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:40,644 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/temp/
+2025-11-27 11:55:40,644 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:40,691 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /temp/ HTTP/1.1" 200 None
+2025-11-27 11:55:40,691 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:41,650 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/assets/
+2025-11-27 11:55:41,650 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:41,698 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /assets/ HTTP/1.1" 200 None
+2025-11-27 11:55:41,702 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:42,651 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/static/
+2025-11-27 11:55:42,651 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:42,702 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /static/ HTTP/1.1" 200 None
+2025-11-27 11:55:42,702 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:43,652 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/media/
+2025-11-27 11:55:43,652 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:43,701 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET /media/ HTTP/1.1" 200 None
+2025-11-27 11:55:43,703 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.05s)
+2025-11-27 11:55:44,654 - web_pentest_cli.http_client - DEBUG - Request: GET https://chantipro.com/
+2025-11-27 11:55:44,654 - web_pentest_cli.http_client - DEBUG - Headers: {'User-Agent': 'ShieldScan/1.0 (Security Testing Tool; +https://github.com/yourusername/shieldscan)', 'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive'}
+2025-11-27 11:55:44,697 - urllib3.connectionpool - DEBUG - https://chantipro.com:443 "GET / HTTP/1.1" 200 None
+2025-11-27 11:55:44,697 - web_pentest_cli.http_client - DEBUG - Response: 200 (1174 bytes, 0.04s)
+2025-11-27 11:55:44,697 - web_pentest_cli.scanner - INFO - Scan completed: 21 vulnerabilities found in 42.60s
+2025-11-27 11:55:44,727 - web_pentest_cli.reporter - INFO - HTML report saved to: security_report.html
